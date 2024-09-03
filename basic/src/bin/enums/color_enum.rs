@@ -24,7 +24,8 @@ impl Color {
     }
 }
 
-fn main() {
+pub fn run_color() {
+    #[allow(dead_code)]
     fn print_color(color: Color) {
         match color {
             Color::Red => println!("red"),
@@ -43,6 +44,4 @@ fn main() {
     assert!(my_red.is_green_parts());
     assert!(my_blue.is_green_parts());
     assert!(my_yellow.is_green_parts());
-
-    print_color(my_yellow);
 }
